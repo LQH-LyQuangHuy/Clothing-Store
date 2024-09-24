@@ -1,0 +1,235 @@
+.wrapper {
+    margin-top: var(--height-header);
+}
+
+.banner-container {
+    width: 100%;
+
+    img {
+        display: block;
+        border: none;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    padding: 30px 40px;
+    color: var(--light-text);
+    background-color: var(--dark-background);
+}
+
+.icon-section-container {
+    display: flex;
+    flex:  1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .icon-section {
+        width: 20%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+}
+
+.content-section-2 {
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    .product-intro {
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+
+    
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-more-btn {
+    font-size: 18px;
+    margin-right: 25px;
+
+}
+
+.product {
+    width: 18%;
+    height: auto;
+    
+    
+}
+
+.product:first-child,
+.product + .product {
+    margin-left: 25px;
+}
+
+.thumbnail {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 300px;
+    position: relative;
+
+    img {
+        display: block;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::after {
+        content: attr(data-star);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    &::before {
+        content: "sale";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: .8rem;
+        padding: 5px 8px;
+        border-radius: 3px;
+        color: white;
+        background-color: #ff3102;
+    }
+}
+.info-container {
+    font-size: 1vw;
+    margin-top: 10px;
+    .name-product {
+        color: black;
+        text-decoration: none;
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        overflow: hidden;
+    }
+}
+
+.thumbnail:hover .size-product {
+    display: block;
+}
+.size-product {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 90%;
+    min-height: 100px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+.title-size {
+    text-align: center;
+}
+
+.size-container {
+    display: flex;
+    padding: 10px 0 0;
+    flex-wrap: wrap;
+    row-gap: 5px;
+}
+
+.size-btn {
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+}
+.size-btn:first-child,
+.size-btn + .size-btn {
+    margin-left: 5px;
+}
+
+.price-container {
+    display: flex;
+}
+
+.sale-price-product,
+.origin-price-product {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.sale-price-product {
+
+    &::after {
+        content: attr(data-sale);
+        margin-left: 15px;
+        margin-right: 20px;
+        background-color: #273bcd;
+        padding: 2px 5px;
+        color: white;
+        border-radius: 3px;
+        font-size: 12px;
+        height: 16px;
+        display: inline-block;
+        line-height: 16px;
+    }
+}
+
+.sale {
+    text-decoration: line-through;
+    opacity: 0.7;
+    display: block;
+    color: #231f20;
+    margin-top: .2rem;
+}
+
+.refund-product {
+    font-size: 12px;
+    opacity: 0.7;
+    display: block;
+    font-weight: 400;
+    color: #231f20;
+    margin-top: .2rem;
+}

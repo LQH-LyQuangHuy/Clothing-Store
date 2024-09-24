@@ -1,0 +1,9 @@
+.wrapper {
+    margin-top: var(--height-header);
+    padding: 50px 200px;
+    color: black;
+}
+
+.item + .item {
+    margin-top: 20px;
+}

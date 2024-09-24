@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+:root{
+  --light-text: white;
+  --dark-text: black;
+  --dark-background: black;
+  --light-background: white;
+  --height-header: 84px
+}

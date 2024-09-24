@@ -1,0 +1,16 @@
+.wrapper {
+    margin-top: var(--height-header);
+    padding: 50px 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+.active {
+    color: white;
+    background-color: black;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
